@@ -1,11 +1,14 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, Image } from 'react-native';
 
 export default class Cart extends React.Component{
         render() {
             return(
             <View style={styles.container} >
-            <Text style={styles.teste}> Cart </Text>
+
+                <Image style={styles.cart} source={require('../img/shopCart.png')}/> 
+                <Text style={styles.textEmpty}> Seu carrinho está vazio :( </Text>
+                <Text style={styles.addItens}> Adicione itens no seu carrinho  </Text>
             </View>
             );
         }
@@ -16,9 +19,21 @@ export default class Cart extends React.Component{
         flex:1,
         alignItems: 'center'
         },
-        teste:{
-            fontSize: 20,
+        textEmpty:{
+            fontSize: 25,
             textAlign: 'center',
-            margin: 10
+            color: '#969FAA'
+        },
+        addItens:{
+            fontSize: 18,
+            textAlign: 'center',
+            color: '#969FAA'
+        },
+        cart:{
+            width: 400,
+            height: 400,
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 60
         }
     });

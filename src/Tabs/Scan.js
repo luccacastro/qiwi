@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, Alert } from 'react-native';
+import { firebaseDatabase } from '../utility/Utility';
 
 import { BarCodeScanner, Permissions } from 'expo';
 
@@ -20,10 +21,11 @@ export default class Scan extends React.Component {
       };
     
       _handleBarCodeRead = data => {
-        Alert.alert(
-          'Leitura concluída!!',
-          JSON.stringify(data)
-        );
+        Alert.alert('Leitura concluída!!');
+        var str = JSON.stringify(data)
+        var itemsRef = firebaseDatabase.ref('Scan');
+        var item = { dados: str }
+        itemsRef.push(item);
       };
     
       render() {

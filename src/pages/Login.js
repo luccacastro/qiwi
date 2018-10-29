@@ -29,7 +29,7 @@ static navigationOptions = {
 const styles = StyleSheet.create({
     container:{
     flex:1,
-    backgroundColor: '#9CE0D7',
+    backgroundColor: '#4045AD',
     },
     logoContainer:{
         alignItems: 'center',

@@ -18,7 +18,8 @@ export class Home extends React.Component{
 const styles = StyleSheet.create({
   container:{
   flex:1,
-  alignItems: 'center'
+  alignItems: 'center',
+  backgroundColor: '#f1e7fe'
   },
   teste:{
       fontSize: 50,

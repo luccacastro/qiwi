@@ -12,7 +12,7 @@ export default class LoginForm extends React.Component{
         }
     }
 
-    componentDidMount(){
+   /* componentDidMount(){
         const config = {
             apiKey: "AIzaSyDhohinkGt2C1czEJ3Ybl5GbPmP_ddOVSw",
             authDomain: "qiwi-e4600.firebaseapp.com",
@@ -45,7 +45,7 @@ export default class LoginForm extends React.Component{
             }
             )
         }
-
+*/
     render() {
         return(
         
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     accText:{
         textAlign: 'center',
         fontSize: 17,
-        color: 'rgba(44, 62, 80, 0.7)'
+        color: 'rgba(241, 231, 254, 0.6)'
     },
     //esqueceu a senha
     password:{
@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     passwordText:{
         textAlign: 'center',
         fontSize: 17,
-        color: 'rgba(44, 62, 80, 0.7)'
+        color: 'rgba(241, 231, 254, 0.6)'
         
     }
 });
