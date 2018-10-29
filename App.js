@@ -23,9 +23,7 @@ const AppStackNavigator = createStackNavigator({
     'Home': {
         screen: Home,
         navigationOptions: {
-            title: 'QIWI',
-            headerLeft: null,
-            
+            title: 'QIWI', 
         }
         
     },
@@ -43,10 +41,17 @@ const AppStackNavigator = createStackNavigator({
       {
         navigationOptions: {
             headerStyle: {
-                backgroundColor: '#4045AD',
+                backgroundColor: '#4045AD', 
                 elevation:0,
-            
+                textAlign: 'center'
             },
+                headerTitleStyle: { 
+                    color: '#dadfe1',
+                    textAlign: 'center',
+                    alignSelf:'center',
+                   
+            },
+            
         },
 
     }

@@ -5,6 +5,9 @@ import { firebaseDatabase } from '../utility/Utility';
 import { BarCodeScanner, Permissions } from 'expo';
 
 export default class Scan extends React.Component {
+  navigationOptions = {
+    header: 'Scanner', 
+}
     state = {
         hasCameraPermission: null,
       };

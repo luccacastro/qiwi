@@ -7,7 +7,7 @@ export default class HomeScan extends React.Component{
         render() {
             return(
                 <TouchableOpacity>
-               <Image resizeMode='contain' source={require('../img/scan111.png')}
+               <Image source={require('../img/scan111.png')}
                  style={styles.banner}/>
                  </TouchableOpacity>
             );

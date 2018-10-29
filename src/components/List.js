@@ -49,7 +49,7 @@ const showList = [
             
             return(
                 <View style={styles.container}>
-                <Text style={styles.findText}>Encontre a sua loja :D </Text>
+                <Text style={styles.findText}>Confira onde encontrar nossos Serviços : </Text>
                     <FlatList 
                         numColumns={2}
                         
