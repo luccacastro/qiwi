@@ -17,7 +17,10 @@ export default class Cart extends React.Component{
     const styles = StyleSheet.create({
         container:{
         flex:1,
-        alignItems: 'center'
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
         },
         textEmpty:{
             fontSize: 25,
@@ -34,6 +37,6 @@ export default class Cart extends React.Component{
             height: 400,
             justifyContent: 'center',
             alignItems: 'center',
-            marginTop: 60
+            
         }
     });
